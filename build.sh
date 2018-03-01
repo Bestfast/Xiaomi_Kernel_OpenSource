@@ -9,7 +9,7 @@ KERNEL_DIR=$PWD
 KERNEL_TOOLCHAIN=$KERNEL_DIR/toolchain/bin/aarch64-linux-android-
 rm -rf toolchain
 git clone https://android.googlesource.com/platform/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9 --single-branch toolchain
-KERNEL_DEFCONFIG=sagit_defconfig
+KERNEL_DEFCONFIG=sagit_user_defconfig
 JOBS="-j$(nproc --all)"
 
 export CROSS_COMPILE=$KERNEL_TOOLCHAIN
